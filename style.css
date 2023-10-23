@@ -60,16 +60,22 @@ header h1{
 
 .btn-one {
   background: #26bba4;
-  box-shadow: 0px 10px 20px 0px rgba(137, 229, 199, 0.5),
-    0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset;
+  box-shadow: 0px 10px 20px 0px rgba(137, 229, 199, 0.50), 0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset;
 }
+.btn-one:hover{
+  /* background: rgba(255, 255, 255, 0.25); */
 
+filter:brightness(90%);
+}
 .btn-two {
   background: #6174ff;
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1),
-    0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset;
-}
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.10), 0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset;
 
+}
+.btn-two:hover{
+  /* background: rgba(255, 255, 255, 0.25); */
+filter: brightness(90%);
+}
 .text-two {
   margin: 150px auto 80px;
 }
@@ -103,11 +109,11 @@ header h1{
 }
 
 .hero-img img {
-  width: 752px;
+  width: 745px;
   height: 572px;
   position: relative;
   left: -110px;
-  top: 20px;
+  top: 0;
 }
 
 .hero-img-text {
@@ -300,8 +306,8 @@ footer {
 }
 
 .footer-texts-one h6:hover {
-  text-decoration: underline;
-  color: rgb(20, 109, 79);
+  text-decoration:none;
+  color: #26BBA4;
 }
 
 .icons {
@@ -314,16 +320,16 @@ footer {
 }
 
 .icons i:hover {
-  color: rgb(20, 109, 79);
+   color: #26BBA4;;
 }
 
 .icons i {
   font-size: 20px;
 }
 
-@media (max-width:375px) {
+@media (max-width:450px) {
   .container{
-    max-width: 365px;
+    max-width: 450px;
   }
   header img{
   padding: 120px 120px 40px;
@@ -447,12 +453,15 @@ footer {
     font-size: 20px;
     align-items: center;
     gap: 50px;
+   
   }
 
   .footer-texts-one {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin-bottom: 20px;
+    align-items: center;
   }
 
   .icons i {
