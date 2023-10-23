@@ -238,6 +238,9 @@ header h1{
   width: 165px;
   height: 49px;
 }
+.imgss img:hover{
+  filter:none;
+}
 
 .Clipboard {
   margin: 0 auto 150px;
